@@ -16,7 +16,7 @@ public class Downloaders extends Thread {
 
     public void run(){
         try {
-           // cdl.await();
+            cdl.await();
                 System.out.println(this.getName() + "ожидает загрузки");
                 semaphore.acquire();
                 System.out.println(this.getName() + "начал загрузку с сервера");
