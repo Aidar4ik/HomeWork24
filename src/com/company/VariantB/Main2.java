@@ -14,8 +14,10 @@ public class Main2 {
         }
         try {
             cdl.await();
-            System.out.println("Автобус набрал всех пассажиров и поехал в Ош");
         } catch (Exception e) {
+        }
+        if(cdl.getCount()<=0){
+            System.out.println("Автобус набрал всех пассажиров и поехал в Ош");
         }
     }
 }
